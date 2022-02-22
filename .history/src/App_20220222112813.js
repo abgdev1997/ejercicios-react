@@ -7,22 +7,20 @@ import incognito from './rey_incognito.png'
 function App() {
 
   const cambiarImagen = (e) => {
-    if(e.target.src.includes('incognito')){
-      e.target.style.visibility = 'hidden';
-    }else{
+    if(e.target.src.includes('rey')){
       e.target.src = incognito;
+    }else if(e.target.src.includes('incognito')){
+      e.target.src = null;
+      e.target.style.backgroundColor = null;
     }
-    e.target.parentNode.style.backgroundColor="white";
-    e.target.parentNode.style.borderColor="white";
   }
 
   const cambiarTexto = (e) => {
-    if(e.target.innerHTML.includes('Visto')){
-      e.target.style.visibility = 'hidden';
-    }else{
+    if(e.target.innerHTML.includes('Rey')){
       e.target.innerHTML = 'Visto';
+    }else if(e.target.innerHTML.includes('Visto')){
+      e.target.innerHTML = null;
     }
-    e.target.style.backgroundColor='white';
   }
 
   return (
@@ -32,11 +30,11 @@ function App() {
         <span onClick={cambiarTexto} className='span'>Rey Leovigildo</span>
       </div>
       <div className='img'>
-        <img onClick={cambiarImagen} alt='Rey Recesvinto' src={recesvinto} />
+        <img alt='Rey Recesvinto' src={recesvinto} />
         <span onClick={cambiarTexto} className='span'>Rey Recesvinto</span>
       </div>
       <div className='img'>
-        <img onClick={cambiarImagen} alt='Rey Sisebuto' src={sisebuto} />
+        <img alt='Rey Sisebuto' src={sisebuto} />
         <span onClick={cambiarTexto} className='span'>Rey Sidebuto</span>
       </div>
     </div>

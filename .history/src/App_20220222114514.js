@@ -12,13 +12,11 @@ function App() {
     }else{
       e.target.src = incognito;
     }
-    e.target.parentNode.style.backgroundColor="white";
-    e.target.parentNode.style.borderColor="white";
   }
 
   const cambiarTexto = (e) => {
     if(e.target.innerHTML.includes('Visto')){
-      e.target.style.visibility = 'hidden';
+      e.target.innerHTML = '';
     }else{
       e.target.innerHTML = 'Visto';
     }

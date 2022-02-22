@@ -13,7 +13,6 @@ function App() {
       e.target.src = incognito;
     }
     e.target.parentNode.style.backgroundColor="white";
-    e.target.parentNode.style.borderColor="white";
   }
 
   const cambiarTexto = (e) => {
