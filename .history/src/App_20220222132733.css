@@ -22,7 +22,6 @@
 
 .mensaje{
   padding: 15px;
-  font-size: 2rem;
 }
 
 .img{
@@ -39,14 +38,4 @@
 
 .span{
   padding-top: 10px;
-}
-
-.textoVerde{
-  color: darkgreen;
-  font-size: 3rem;
-}
-
-.textoRojo{
-  color: firebrick;
-  font-size: 3rem;
 }

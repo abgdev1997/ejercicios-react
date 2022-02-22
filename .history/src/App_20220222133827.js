@@ -58,7 +58,7 @@ function App() {
         <span className="textoVerde">{reyesGodos[contador].aficion}</span>
       </h2>
     );
-    if (contador === reyesGodos.length - 1) {
+    if (contador === 2) {
       setContador(0);
     } else {
       setContador(contador + 1);

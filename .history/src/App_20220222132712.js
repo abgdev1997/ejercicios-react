@@ -22,11 +22,7 @@ function App() {
   ];
 
   const [mensaje, setMensaje] = useState(
-    <h2>
-      La afición principal de{" "}
-      <span className="textoRojo">{reyesGodos[0].nombre}</span> es{" "}
-      <span className="textoVerde">{reyesGodos[0].aficion}</span>
-    </h2>
+    `La afición principal de ${reyesGodos[0].nombre} es ${reyesGodos[0].aficion}`
   );
 
   const [contador, setContador] = useState(1);
@@ -52,13 +48,9 @@ function App() {
 
   const cambiarMensaje = () => {
     setMensaje(
-      <h2>
-        La afición principal de{" "}
-        <span className="textoRojo">{reyesGodos[contador].nombre}</span> es{" "}
-        <span className="textoVerde">{reyesGodos[contador].aficion}</span>
-      </h2>
+      `La afición principal de ${reyesGodos[contador].nombre} es ${reyesGodos[contador].aficion}`
     );
-    if (contador === reyesGodos.length - 1) {
+    if (contador === 2) {
       setContador(0);
     } else {
       setContador(contador + 1);
@@ -88,10 +80,8 @@ function App() {
         </div>
       </div>
       <div className="mensaje-container">
-        <button className="mensaje" onClick={cambiarMensaje}>
-          Ver Siguiente
-        </button>
-        <div>{mensaje}</div>
+        <button className="mensaje" onClick={cambiarMensaje}>Ver Siguiente</button>
+        <span className="mensaje">{mensaje}</span>
       </div>
     </div>
   );

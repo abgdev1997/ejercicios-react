@@ -1,0 +1,21 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img{
+  background-color:#E3A11B;
+  border-radius: 25px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+}
+
+.span{
+  padding-top: 10px;
+}

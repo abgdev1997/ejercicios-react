@@ -20,11 +20,6 @@
   padding: 15px;
 }
 
-.mensaje{
-  padding: 15px;
-  font-size: 2rem;
-}
-
 .img{
   background-color:#E3A11B;
   border-radius: 25px;
@@ -39,14 +34,4 @@
 
 .span{
   padding-top: 10px;
-}
-
-.textoVerde{
-  color: darkgreen;
-  font-size: 3rem;
-}
-
-.textoRojo{
-  color: firebrick;
-  font-size: 3rem;
 }
