@@ -1,7 +1,5 @@
 .App{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
 }
 
 .img{
@@ -12,10 +10,4 @@
   align-items:center;
   width: 20%;
   margin: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.span{
-  padding-top: 10px;
 }

@@ -1,0 +1,13 @@
+.App{
+  
+}
+
+.img{
+  background-color:#E3A11B;
+  border-radius: 25px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  width: 20%;
+  margin: 10%;
+}
