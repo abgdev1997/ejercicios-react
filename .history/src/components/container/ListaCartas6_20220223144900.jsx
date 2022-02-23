@@ -49,21 +49,21 @@ const Listacartas6 = () => {
         },
       ];
 
-      const [reyesG, setReyesG] = useState(reyes);
+      const [reyesGodos, setReyesGodos] = useState(reyes);
 
       const borrarRey = (rey) => {
-        const index = reyesG.indexOf(rey);
+        const index = reyesGodos.indexOf(rey);
         console.log(index)
-        const tempReyes = [...reyesG];
+        const tempReyes = [...reyesGodos];
         console.log(tempReyes)
         tempReyes.splice(index, 1);
         console.log(tempReyes)
-        setReyesG(tempReyes);
+        setReyesGodos(tempReyes);
       };
 
     return (
         <div className="list">
-            {reyesG.filter(rey => !(rey.nombre.includes('g'))).map((rey) => (<Carta6 key={rey.id} rey={rey} borrar={borrarRey}/>))}
+            {reyes.filter(rey => !(rey.nombre.includes('g'))).map((rey) => (<Carta6 key={rey.id} rey={rey} borrar={borrarRey}/>))}
         </div>
     );
 }

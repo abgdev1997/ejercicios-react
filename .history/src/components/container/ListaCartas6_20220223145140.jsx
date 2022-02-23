@@ -63,7 +63,7 @@ const Listacartas6 = () => {
 
     return (
         <div className="list">
-            {reyesG.filter(rey => !(rey.nombre.includes('g'))).map((rey) => (<Carta6 key={rey.id} rey={rey} borrar={borrarRey}/>))}
+            {reyesG.filter(rey => (rey.nombre.includes('g'))).map((rey) => (<Carta6 key={rey.id} rey={rey} borrar={borrarRey}/>))}
         </div>
     );
 }
