@@ -1,0 +1,14 @@
+.card{
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-radius: 20px;
+    margin: 1.5rem;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.span{
+    padding: 10px;
+    font-size: 2rem;
+}

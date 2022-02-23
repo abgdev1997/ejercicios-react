@@ -1,0 +1,11 @@
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

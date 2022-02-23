@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin: 1.5rem;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.span{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.button{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.button:hover{
+    background-color: dimgray;
+    color: black;
+    border: 1px solid black;
+}
